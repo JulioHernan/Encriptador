@@ -1,0 +1,137 @@
+* {
+    background: #e7f5e5ff;
+    font-family: "Inter",sans-serif ;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 5%;
+}
+.logo {
+    padding-top: 1rem;
+    margin-left: 2rem;
+    width: 3%;
+}
+main {
+    display: flex;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+}
+.text-area {
+    border: none;
+    color: #2c7f22ff;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    text-transform: lowercase;
+    height: 14rem;
+}
+::placeholder {
+    color: #2c7f22ff;
+}
+.text-area:focus {
+    outline: none;
+}
+.mensaje {
+    background: #fff;
+    background-image: url("/imagenes/Muñeco.svg");
+    background-repeat: no-repeat;
+    border: none; 
+    color: #2c7f22ff;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    position: fixed;
+    height: 14rem;
+}
+.mensaje:focus {
+    outline: none;
+}
+.botones {
+    display: flex;
+    margin-top: 1.5rem;
+    transition: all 1s ease-in-out;
+} 
+.btn-desencriptar {
+    background: #c0e4beff;
+    border: 1px solid #2c7f22ff;
+    border-radius: 24px;
+    color: #2c7f22ff;
+    cursor: pointer;
+    height: 3.3rem;
+    margin-left: 2rem;
+    width: 16rem;
+
+}
+.btn-encriptar {
+    background-color: #2c7f22ff;
+    border: 1px solid #2c7f22ff;
+    border-radius: 24px;
+    color: #fff;
+    height: 3.3rem;
+    width: 16rem;
+}
+.btn-copiar {
+    border: 1px solid #2c7f22ff;
+    border-radius: 24px;
+    color: #2c7f22ff;
+    cursor: pointer;
+    height: 3.3rem;
+    margin-left: 2rem;
+    margin-top: 19rem;
+    position: absolute;
+    width: 16rem;
+}
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0,.5)
+}
+.informacion {
+    color: #495057;
+    font-size: .8rem;
+}
+footer {
+    display: flex;
+    justify-content:center;
+}
+@media only screen and (max-width:1024px){
+   main {
+    display: block;
+   }
+   .logo {
+        width: 6%;
+   }
+   .informacion {
+    font-size: .7rem;
+   }
+   .mensaje {
+    position: sticky;
+   }
+   .btn-copiar {
+    margin-top:0;
+   }
+   footer {
+    padding-top: 1rem;
+   }
+}
+
+@media only screen and (max-width:600px){
+    main {
+        flex-direction: column;
+    }
+    .logo {
+        width: 8%;
+    }
+    .text-area, .mensaje {
+        margin-left: 0;
+    }
+    .btn-copiar, .btn-desencriptar, .btn-encriptar {
+        margin-left: 0;
+        margin-bottom: .4rem;
+    }
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+    .informacion {
+        font-size: .6rem;
+    }
+}
